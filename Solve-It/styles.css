@@ -1,0 +1,199 @@
+/* Colores y tipografía base */
+:root {
+    --primary-color: #3498db; /* Azul más moderno */
+    --secondary-color: #2ecc71; /* Verde para acentos */
+    --background-color: #f9f9f9; /* Fondo más claro */
+    --card-background: #fff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --hover-color: #e67e22; /* Naranja para hover */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    border-radius: 25px;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    width: 200px;
+    margin-top: 10px; /* Ajuste para separarlo de la línea verde */
+}
+
+nav input[type="text"]:focus {
+    border-color: var(--primary-color);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+    margin-top: 10px; /* Ajuste para separarlo del borde de la barra de búsqueda */
+}
+
+.categories a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.categories a.active {
+    background-color: var(--primary-color);
+}
+
+.categories a:hover {
+    background-color: var(--hover-color);
+}
+
+/* Cuerpo de la página */
+main {
+    padding: 20px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel .company {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px; /* Altura ajustada */
+    position: relative; /* Necesario para el posicionamiento absoluto del botón */
+    margin: 0 15px; /* Ajustado margen para separación de tarjetas */
+    overflow: hidden; /* Para asegurar que el contenido no se desborde */
+}
+
+.carousel .company img {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 120px; /* Tamaño ajustado para una apariencia moderna */
+    border-radius: 50%;
+    border: 3px solid var(--primary-color); /* Borde alrededor de la imagen */
+}
+
+.carousel .company strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel .company p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0 0 20px;
+}
+
+.carousel .company .more-info {
+    display: inline-block;
+    padding: 8px 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 12px; /* Tamaño de fuente ajustado */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: absolute;
+    bottom: 10px; /* Ajustado para que no quede tan cerca del borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.carousel .company .more-info:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Botones de navegación */
+.slick-prev,
+.slick-next {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.slick-prev {
+    left: -60px; /* Ajustado para mejor visibilidad */
+}
+
+.slick-next {
+    right: -60px; /* Ajustado para mejor visibilidad */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: var(--hover-color);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 24px;
+    color: #fff;
+}
+
+.slick-prev:before {
+    content: '←'; /* Flecha hacia la izquierda */
+}
+
+.slick-next:before {
+    content: '→'; /* Flecha hacia la derecha */
+}

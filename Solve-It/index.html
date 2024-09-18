@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Soluciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profiles</a></li>
+                <li><a href="#">Chats</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <input type="text" placeholder="Search">
+        </nav>
+        <div class="categories">
+            <a href="/GraphicDesing/graphic.html">Graphic Design</a>
+            <a href="/WebDesign/desing.html">Web Design</a>
+            <a href="#">Systems engineer</a>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="company">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmSY8CfnB4_EkqsXaDbV0xKgffGg0jZ_ACQ&s" alt="Banco Davivienda">
+                <strong>Banco Davivienda:</strong>
+                <p>Systems engineer for the implementation of security measures in our website.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://play-lh.googleusercontent.com/S_PTffJ-hEB5_x9FFV-6QTgaGW8g00TbkL7Aag1bxBu2T_NiXsHeRuk_GXaUnVoCvwM" alt="Farmacias San Nicolas">
+                <strong>Farmacias San Nicolas:</strong>
+                <p>Systems engineer for the development of data storage and retrieval systems.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzg1AMX5f8cMQKiSNfzaql2UM9mBPzzBnsg&s" alt="Walmart">
+                <strong>Walmart:</strong>
+                <p>Systems Engineer for virtualization and cloud computing.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRym3-iyZut-OUrdhlXPo2-L9vRgRFg4CfAV3t6ngp0MKVcASWBIOhjL5eTR4PPuXZv6hE&usqp=CAU">
+                <strong>Tienda Doña María:</strong>
+                <p>Systems engineer for the planning and management of new projects.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://metrocentro.com.co/wp-content/uploads/2024/02/2-1.png" alt="Dollarcity">
+                <strong>Dollarcity:</strong>
+                <p>Systems engineer for mobile application development.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://www.plazamerliot.com.sv/wp-content/uploads/2019/11/farmaciaseconomicas.png">
+                <strong>Farmacias Economicas:</strong>
+                <p>Systems maintenance engineer for our sales site.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
+ 

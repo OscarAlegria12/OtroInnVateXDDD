@@ -1,0 +1,32 @@
+.hackathon-container {
+    max-width: 600px;
+    margin: 80px auto; /* Agregar margen superior para desplazar hacia abajo */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hackathon-container .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.participar-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.participar-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Soluciones</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profiles</a></li>
+                <li><a href="#">Chats</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <input type="text" placeholder="Search">
+        </nav>
+        <div class="categories">
+            <a href="/GraphicDesing/graphic.html">Graphic Design</a>
+            <a href="#">Web Design</a>
+            <a href="/index.html">Systems engineer</a>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="company">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png" alt="Design Project 1">
+                <strong>Amazon</strong>
+                <p>Looking to enhance the user experience with a redesign of their shopping interface.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png" alt="Design Project 2">
+                <strong>Netflix</strong>
+                <p>Requires a new web interface design to improve content discovery and user engagement.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://cdn.pixabay.com/photo/2018/05/04/21/27/airbnb-3375057_640.png" alt="Design Project 3">
+                <strong>Airbnb</strong>
+                <p>Needs an updated website design to better handle increased traffic and bookings.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://i.pinimg.com/564x/b4/b4/51/b4b451d1ae743ab9cbcdade01a8e4e71.jpg" alt="Design Project 4">
+                <strong>Uber</strong>
+                <p>Looking to enhance their web platform to streamline driver-partner interactions.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png" alt="Design Project 5">
+                <strong>Tesla</strong>
+                <p>Requires a more interactive and engaging design for their vehicle configurator on the website.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://developer.spotify.com/images/guidelines/design/icon3.svg" alt="Design Project 6">
+                <strong>Spotify</strong>
+                <p>Needs a redesign of their web app to introduce new features and improve navigation.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

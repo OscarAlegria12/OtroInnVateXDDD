@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profiles</a></li>
+                <li><a href="#">Chats</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <input type="text" placeholder="Search">
+        </nav>
+        <div class="categories">
+            <a href="#">Graphic Design</a>
+            <a href="/WebDesign/desing.html">Web Design</a>
+            <a href="#">Systems engineer</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="company">
+                <img src="https://static.cdnlogo.com/logos/a/90/adobe.png" alt="Graphic Design Project 1">
+                <strong>Adobe</strong>
+                <p>Needs fresh promotional materials to highlight the latest updates to their Creative Cloud suite.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h7lr1063sdspn410tn9iumnr18.png" alt="Graphic Design Project 2">
+                <strong>Nike</strong>
+                <p>Requires new graphic designs for upcoming marketing campaigns and product launches.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://i.pinimg.com/736x/1e/c1/d2/1ec1d2ce366d1f603b1bde70ae508063.jpg" alt="Graphic Design Project 3">
+                <strong>Coca-Cola</strong>
+                <p>Looking for innovative packaging designs for a new product line.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="Graphic Design Project 4">
+                <strong>Apple</strong>
+                <p>Needs a redesign of their online advertising visuals to match new product aesthetics.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1200px-LEGO_logo.svg.png" alt="Graphic Design Project 5">
+                <strong>Lego</strong>
+                <p>Requires fresh graphics for a new series of toy packaging and promotional materials.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+            <div class="company">
+                <img src="https://logovector.net/wp-content/uploads/2013/10/sony-logo-vector.png" alt="Graphic Design Project 6">
+                <strong>Sony</strong>
+                <p>Needs creative visual assets for a major product launch event.</p>
+                <a href="#" class="more-info">More information</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
